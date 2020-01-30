@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Basics</title>
+    <style>
+      header h1 {
+        color:blue;
+        font-size:54px;
+        background-color:cyan;
+        text-align: center;
+        width:400px;
+        /*
+        margin-left: 300px;
+        margin-top: 200px;
+        */
+        /*
+        margin: 200px 300px 200px 300px;
+        */
+        margin: 100px auto;
+      }
+      article h1 {
+        font-size: 24px;
+        background-color: bisque;
+        color: coral
+      }
+      /* group selector */
+      h1, h2, h3 {
+        font-family:cursive;
+      }
+      /*
+      p {
+        background-color: crimson;
+      }
+      */
+      /* When there are two rules, the one closest to the element takes the place */
+      p {
+        font-family: Arial, sans-serif;
+        background-color: cyan;
+      }
+      article {
+        border: solid 5px black;
+        width: 400px;
+      }
+      .secondArticle {
+        background-color:#00cccc;
+      }
+      /* navigation styles */
+      nav {
+        background-color: #4dffb8;
+        padding: 10px;
+      }
+      nav ul {
+        background-color: #ccffeb;
+      }
+      nav ul li {
+        background-color: chocolate;
+        margin: 5px;
+        width: 125px;
+        display: inline;
+        padding: 5px;
+      }
+      nav a:link {
+        padding:  5px;
+        background-color: #66b3ff;
+        color: aqua
+      }
+      nav a:hover {
+        background-color: aqua;
+        color: #66b3ff;
+      }
+      /*
+      nav a:visited {
+        color: red;
+        background-color: cyan;
+      }
+      */
+      #wrapper {
+        border: 10px dashed purple;
+        width: 80%;
+        margin: 5px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+
+
+    <header>
+      <h1>CSS Basics</h1>
+    </header>
+    <nav>
+      <ul>
+        <li> <a href="https://yuris.moe" target="_blank">Link</a></li>
+        <li> <a href="https://yuris.moe" target="_blank">Link</a></li>
+        <li> <a href="https://yuris.moe" target="_blank">Link</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <h1>Article 1</h1>
+        <p>This is a paragraph with filler text</p>
+        <h2>This is the second article heading</h2>
+        <section>
+          <h3  class="secondArticle">section heading</h3>
+        </section>
+      </article>
+
+      <article class = "secondArticle">
+        <h1>Article 2</h1>
+        <p>This is a paragraph with filler text</p>
+        <h2>This is the second article heading</h2>
+        <section>
+          <h3>section heading</h3>
+        </section>
+      </article>
+
+    </main>
+    </div>
+  </body>
+</html>
