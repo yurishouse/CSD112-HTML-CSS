@@ -24,42 +24,96 @@ p{
 }
 header{
     background-color: #ffcccc;
+    position: relative;
 }
 
 /*upprt social navigation*/
 header nav{
-    position: relative;
-    top: 0;
+    position: absolute;
+    top: 5px;
     right: 0;
     width: 200px;
 }
-header nav ul{}
+header nav ul{
+    margin: 0;
+    padding: 0;
+
+}
 header nav ul li{
     display: inline;
 }
 header nav ul a:link{}
 
-header img{}
-header h1{}
+header img{
+    
+}
+header h1{
+    position: absolute;
+    left: 200px;
+    top:50px;
 
-nav.mainNav{}
-nav.mainNav ul{}
-nav.mainNav ul li{}
-nav.mainNav ul li a:link, nav.mainNav ul li a:visited{}
-nav.mainNav ul li a:hover{}
+}
+
+nav.mainNav{
+    background-color: #d9ffcc;
+}
+nav.mainNav ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav.mainNav ul li{
+    display: inline-block;
+    background-color: coral;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+}
+nav.mainNav ul li a:link, nav.mainNav ul li a:visited{
+    color: cyan;
+    background-color: darkgray;
+    text-decoration: none;
+    padding: 3px;
+    width: 125px;
+    display: inline-block;
+}
+nav.mainNav ul li a:hover{
+    color: darkgray;
+    background-color: cyan;
+}
 nav.mainNav ul li a:active{}
 /*nav.mainNav ul li a:visited{} - gives purple link instead we did group selector above */
 
 #hero{
     background-image: url(../images/background.jpg);
-    height: 450px;
+    height: 300px;
+    border-top: dashed 5px #ffffcc;
+    border-bottom: dashed 5px #ffffcc;
     background-size: cover;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#hero blockquote{}
-
-main{}
-main article{}
+#hero blockquote{
+    font-size: 24px;
+    padding: 15px;
+    background-color: rgba(200, 100, 100, .5);
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 150px auto;
+}
+main{
+    text-align: center;
+}
+main article{
+    border: solid 2px black;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    margin: 10px auto;
+    height: 350px;
+}
 main article img{}
 main article h1{}
 main article p{}
