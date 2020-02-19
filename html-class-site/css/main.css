@@ -1,8 +1,69 @@
 @charset "UTF-8";
-body {
-    background-color: rgb(220, 220, 255);
+
+html{
+    /*font-size: 100%; /*100%=16px */
+    font-size:14px;
+}
+body{
+    background-color: rgb(220,220,255);
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 14px;       
+    }
+
+p{
+    font-size: 1.25rem;
+}
+
+#wrapper{
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    width: 80%;
+    min-width: 920px;
+    margin:0 auto;
+}
+header{
+    background-color: #ffcccc;
+}
+
+/*upprt social navigation*/
+header nav{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 200px;
+}
+header nav ul{}
+header nav ul li{
+    display: inline;
+}
+header nav ul a:link{}
+
+header img{}
+header h1{}
+
+nav.mainNav{}
+nav.mainNav ul{}
+nav.mainNav ul li{}
+nav.mainNav ul li a:link, nav.mainNav ul li a:visited{}
+nav.mainNav ul li a:hover{}
+nav.mainNav ul li a:active{}
+/*nav.mainNav ul li a:visited{} - gives purple link instead we did group selector above */
+
+#hero{
+    background-image: url(../images/background.jpg);
+    height: 450px;
+    background-size: cover;
     
 }
+#hero blockquote{}
+
+main{}
+main article{}
+main article img{}
+main article h1{}
+main article p{}
+
+footer{}
+footer section{}
+
