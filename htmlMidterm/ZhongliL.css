@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/*Setup global enviroment*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: aquamarine;
+}
+
+header{
+    background-color: wheat;
+    height: 100px;
+}
+header h1 {
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellowgreen;
+}
+
+#container{
+    width: 960px;
+    display: block;
+    margin: 40px auto;
+    background-color: cadetblue;
+    border:  10px dashed yellow;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+/*nav*/
+nav{
+    padding: 10px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    background-color: cadetblue;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    display: block;
+    border: 10px solid coral;
+    border-radius: 15px;
+    background-color: darkgray;
+    color: cyan;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+
+
+nav ul li a:hover{
+    color: darkgray !important;
+    background-color: cyan !important;
+}
+
+
+nav ul li .current{
+    color: darkgray;
+    background-color: cyan;
+}
+/*aside*/
+#container aside{
+    width: 280px;
+    height: 700px;
+    box-sizing: border-box;
+    padding: 20px;
+    float: right;
+    background-color: antiquewhite;
+}
+/*Tiger image*/
+#container aside img{
+    display: block;
+    margin: 20px 0 20px -80px;
+}
+
+/*section*/
+#container section {
+    width: 580px;
+    margin: 20px 80px 20px 20px;
+    box-sizing: border-box;
+    padding: 20px 20px 0 20px;
+    float: right;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+
+
+#container section h1,
+#container section h2{
+    margin-bottom: 10px;
+}
+
+
+#container section article.secondArticle{
+    background-color: turquoise;
+    width: 400px;
+    margin: 80px auto 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: right;
+}
+
+
+/*footer*/
+footer{
+    clear: both;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: wheat;
+}
+
+
+

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+
+/*设置全局属性。这是开发网页的首要步骤，因为浏览器默认box都有一定的间距，这非常干扰开发。*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*针对标签设置页面属性*/
+html{
+    background-color: aquamarine;
+}
+
+header{
+    background-color: wheat;
+    /*relative其实是用于内部绝对定位使用的，而且对自己的定位方式不影响。
+    比如里面的一个元素想设置为position:absolute，这时设置此项时里面的元素会根据这个盒子去决定自己的位置。
+    在作业里，我们不需要绝对定位，只需要让标题居中。我们把标题高度与盒子高度一致即可。*/
+    /*position: relative;*/
+    height: 100px;
+}
+header h1 {
+    line-height: 100px;
+    /*top: 50px;*/
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellowgreen;
+    /*如果要绝对定位，内部要用position:absolute;，外部要用position:relative;*/
+    /*如果要针对整个页面绝对定位，要用position:fixed;*/
+    /*position: relative;*/
+}
+
+#container{
+    width: 960px;
+    display: block;
+    /*外边距设置为上下0、左右auto可居中盒子，这样body可以不用设置text-align:center。*/
+    margin: 40px auto;
+    background-color: cadetblue;
+    border:  10px dashed yellow;
+    border-radius: 20px;
+    /*因为里面有两个元素使用了float，float对css来说是不计算高度的。
+    用overflow:hidden可以强制外面盒子包含内容，不会出现内容溢出现象*/
+    overflow: hidden;
+}
+
+
+/*nav*/
+nav{
+    padding: 10px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    background-color: cadetblue;
+    border-radius: 15px;
+    display: inline-block;  /*单行布局*/
+    /*background-color: coral;*/ /*其实这不是li的背景色，是 a 的边框色。给 a 设置边框就不用这么麻烦了。*/
+    margin: 0 10px;
+    /*padding: 5px;*/
+    /*width: 150px;*/
+}
+
+/*a 默认样式*/
+/*a   link“伪类”是未访问的链接样式； visited“伪类”是链接访问过的样式。
+这里并列写的意思是两者样式一致。*/
+nav ul li a{
+    /*默认a是没有宽度与高度的，需要指定为block*/
+    display: block;
+    border: 10px solid coral;
+    border-radius: 15px;
+    background-color: darkgray;
+    color: cyan;
+    text-align: center;
+    padding: 5px 20px;
+    /*去除底部下划线*/
+    text-decoration: none;
+}
+
+
+nav ul li a:link,
+nav ul li a:visited{
+    /*其实不用设置*/
+}
+
+    /*a 鼠标悬浮的样式。hover是“伪类”*/
+nav ul li a:hover{
+    color: darkgray !important;
+    background-color: cyan !important;
+}
+
+/*要设置链接里面有一个激活的样式*/
+nav ul li .current{
+    color: darkgray;
+    background-color: cyan;
+}
+
+
+/*aside*/
+#container aside{
+    width: 280px;
+    height: 700px;
+    box-sizing: border-box;
+    padding: 20px;
+    float: right;
+    background-color: antiquewhite;
+}
+
+
+/*老虎图*/
+#container aside img{
+    display: block;
+    margin: 20px 0 20px -80px;
+}
+
+/*section*/
+#container section {
+    width: 580px;
+    /*580是算出来的。#container总宽度960，aside是280，中间还闪出80的空间给图片的，一共是580*/
+    margin: 20px 80px 20px 20px;
+    /*设置box-sizing: border-box;时，
+    border的宽度、padding距离都是占用 a 内的距离，不会超出 a 的范围*/
+    box-sizing: border-box;
+    padding: 20px 20px 0 20px;
+    /*background-color: darkblue;*/
+    float: right;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+/*#container section article{*/
+/*    border: wheat 5px;*/
+/*    border-radius: 25px;*/
+/*}*/
+
+/*设置标题样式*/
+
+#container section h1,
+#container section h2{
+    margin-bottom: 10px;
+}
+
+
+#container section article.secondArticle{
+    background-color: turquoise;
+    width: 400px;
+    margin: 80px auto 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: right;/*文字向右对齐*/
+}
+
+
+
+/*footer*/
+footer{
+    /*使用 clear:both 可以清空浮动，不受上面两个float的盒子的影响。*/
+    clear: both;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: wheat;
+}
+
+
+
