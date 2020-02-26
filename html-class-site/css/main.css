@@ -42,11 +42,12 @@ header nav ul{
 header nav ul li{
     display: inline;
 }
+/*
 header nav ul a:link{}
 
 header img{
-    
 }
+*/
 header h1{
     position: absolute;
     left: 200px;
@@ -81,7 +82,7 @@ nav.mainNav ul li a:hover{
     color: darkgray;
     background-color: cyan;
 }
-nav.mainNav ul li a:active{}
+/* nav.mainNav ul li a:active{} */
 /*nav.mainNav ul li a:visited{} - gives purple link instead we did group selector above */
 
 #hero{
@@ -114,9 +115,18 @@ main article{
     margin: 10px auto;
     height: 350px;
 }
+/*
 main article img{}
 main article h1{}
 main article p{}
+*/
+main section {
+    background-color: wheat;
+    width: 40%;
+    display: inline-block;
+    margin: 10px;
+
+}
 
 footer{
     background-color: #ffcccc;
