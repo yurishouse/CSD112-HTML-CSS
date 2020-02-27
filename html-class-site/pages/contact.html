@@ -45,11 +45,85 @@
                                 First name:
                                 <input type="text" autofocus required id="firstName" name="firstName" placeholder="Required" size="25" maxlength="50">
                             </label>
+                            <br>
+                            <label>
+                                Last name:
+                                <input type="text" id="lastName" name="lastName" size="25" maxlength="50">
+                            </label>
+                            <br>
+                            <label>
+                                Birthdate:
+                                <input type="date" id="dob" name="dob" size="25">
+                            </label>
+                            <br>
+                            <label>
+                                Email:
+                                <input type="email" name="email" id="email" required size="25" placeholder="Required">
+                            </label>
+                            <br>
+                            <label>
+                                Phone
+                                <input type="tel" id="Phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
+
+                            </label>
+                            <br>
+                            <label>
+                                State:
+                                <select name="State" id="State">
+                                    <option>Choose one</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="NY">New York City</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="ID">Idaho</option>
+                                </select>
+                            </label>
                     </fieldset>
+                    <fieldset>
+                        <legend>Misc. info</legend>
+                        <h3>Hobbies</h3>
+                        <label>
+                            Cooking
+                            <input type="checkbox" name="hobbies" id="cooking">
+                        </label>
+                        <label>
+                            Hiking
+                            <input type="checkbox" name="hobbies" id="Hiking">
+                        </label>
+                        <label>
+                            Gardening
+                            <input type="checkbox" name="hobbies" id="gardening">
+                        </label>
+                        <br>
+                        <h3>Gender</h3>
+                        <label>
+                            Male
+                            <input type="radio" name="gender" id="Male">
+                        </label>
+                        <label>
+                            Female
+                            <input type="radio" name="gender" id="Feale">
+                        </label>
+                        <label>
+                            Other
+                            <input type="radio" name="gender" id="other">
+                        </label>
+                        <label>
+                            Don't want to answer
+                            <input type="radio" name="gender" id="NA">
+                        </label>
+                        <br>
+                        <h3>comments</h3>
+                        <textarea name="comments" id="comments" cols="40" rows="10" placeholder="Say Something ?"></textarea>
+                        <br>
+                    </fieldset>
+                    <input type="submit" id="submit" value="Submit">
+                    <br>
+                    <input type="reset" value="Reset">
                 </form>
             </section>
             <section>
                 <h1>Find US</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2684.9602378368477!2d-122.16917898516157!3d47.70460948919683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54900d79edd95479%3A0x867448f4fd1e313c!2sLake%20Washington%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1582687871552!5m2!1sen!2sus" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 <div>
                     <h2>Call US</h2>
                 </div>
