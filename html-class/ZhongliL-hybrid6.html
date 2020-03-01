@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Comments page</title>
+        <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-image: url(https://yuris.moe/DL/27-com.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body {
+    display: block;
+    text-align: center;
+    background-color: wheat;
+    width: 880px;
+    height: auto;
+    margin:0 auto;
+}
+body article{
+    display: block;
+    text-align: center;
+    width: 800px;
+    height: auto;
+}
+#top-img {
+    
+    width: 880px;
+    height: 280px;
+}
+body form {
+    background-color: #ccff99;
+}
+        </style>
+    </head>
+    <body>
+        <img id="top-img" src="https://yuris.moe/usr/themes/Material/img/random/material-19.png" alt="Material Demo">
+        <article>
+            <br>
+            <br>
+            <h1>This is an  article</h1>
+            <p>   Blah blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah 
+                blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahb
+                lah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah
+                 blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah</p>
+        </article>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Comment Area</legend>
+                    <label>
+                        First name:
+                        <input type="text" autofocus required id="firstName" name="firstName" placeholder="Required" size="25" maxlength="50">
+                    </label>
+                    <label>
+                        Last name:
+                        <input type="text" id="lastName" name="lastName" size="25" maxlength="50">
+                    </label>
+
+                    <label>
+                        Birthdate:
+                        <input type="date" id="dob" name="dob" size="25">
+                    </label>
+                    <br>
+                    <label>
+                        Email:
+                        <input type="email" name="email" id="email" size="25" placeholder="example@xxx.com">
+                    </label>
+                    <label>
+                        website
+                        <input type="url" required size="30" placeholder="http://... *Required">
+                    </label>
+                    <br>
+                <h3>Gender</h3>
+                <label>
+                    Male
+                    <input type="radio" name="gender" id="Male">
+                </label>
+                <label>
+                    Female
+                    <input type="radio" name="gender" id="Feale">
+                </label>
+                <label>
+                    Other
+                    <input type="radio" name="gender" id="other">
+                </label>
+                <label>
+                    cat
+                    <input type="radio" name="gender" id="cat" checked>
+                </label>
+                <br>
+                <h3>comments</h3>
+                <textarea name="comments" id="comments" cols="80" rows="10" placeholder="Say Something ?"></textarea>
+                <br>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+    <footer>
+
+    </footer>
+</html>
