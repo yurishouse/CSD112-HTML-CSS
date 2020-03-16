@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-image: url(../images/27.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body {
+    display: block;
+    text-align: center;
+    background-color: wheat;
+    width: 880px;
+    height: auto;
+    margin:0 auto;
+}
+body article{
+    display: block;
+    text-align: center;
+    width: 800px;
+    height: auto;
+}
+#top-img {
+    
+    width: 880px;
+    height: 280px;
+}
