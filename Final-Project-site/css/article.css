@@ -31,6 +31,11 @@ body article{
     width: 880px;
     height: 280px;
 }
+
+body form {
+    background-color: #ccff99;
+}
+
 header nav{
     position: absolute;
     top: 5px;
