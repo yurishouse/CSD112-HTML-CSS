@@ -33,11 +33,12 @@ img {
 }
 
 .site-logo {
-  background: url(../img/site-logo.png) 50% no-repeat;
+  background: url(../img/avatar.jpg) 50% no-repeat;
   background-size: cover;
   height: 120px;
   width: 120px;
   margin: 15px auto;
+  border-radius: 30px;
 }
 
 .is-compact .site-logo {
@@ -73,6 +74,7 @@ img {
 
 .site-navigation-row .mdl-navigation__link:hover {
   opacity: 1;
+  color: aquamarine;
 }
 
 .mdl-layout__header .mdl-layout__drawer-button {
@@ -80,7 +82,10 @@ img {
 }
 
 .mdl-layout__content {
-  background-color: #fefefe;
+  background-color: wheat;
+  background-image: url(../img/27.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .site-content {
@@ -160,7 +165,7 @@ img {
   margin: 0 auto 2rem;
 }
 
-.homepage-portfolio .mdl-button {
+.homepage-article .mdl-button {
   margin: 0 auto;
 }
 
@@ -177,6 +182,7 @@ img {
 img.article-image {
   width: 100%;
   height: auto;
+  background-color: rgb(240, 168, 204);
 }
 
 .demo-card-image.mdl-card {
