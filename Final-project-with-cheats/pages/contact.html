@@ -31,31 +31,97 @@
               <div class="mdl-card__title">
                 <h1 class="mdl-card__title-text">Contact</h1>
               </div>
-              <div class="mdl-card__media"><img class="article-image" src="../img/contact.jpg" border="0" alt="Contact">
+              <div class="mdl-card__media"><img class="article-image" src="../img/contact.png" border="0" alt="Contact">
               </div>
               <div class="mdl-grid site-copy">
                 <div class="mdl-cell mdl-cell--12-col"><div class="mdl-card__supporting-text">
-  <p>Contact our team using the contact form below:</p>
-  <form action="https://formspree.io/email@example.com" method="POST" class="form-contact">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name" name="name">
-          <label class="mdl-textfield__label" for="Name">Name...</label>
-          <span class="mdl-textfield__error">Letters and spaces only</span>
+  <p>Contact me using the contact form below:</p>
+  <form action="https://formspree.io/mvoqbbrl" method="POST">
+    <fieldset>
+            <label>
+                First name:
+                <input type="text" autofocus required id="firstName" name="firstName" placeholder="Required" size="25" maxlength="50">
+            </label>
+            <label>
+                Last name:
+                <input type="text" id="lastName" name="lastName" size="25" maxlength="50">
+            </label>
+            <label>
+                Birthdate:
+                <input type="date" id="dob" name="dob" size="25">
+            </label>
+            
+            <label>
+                Email:
+                <input type="email" name="email" id="email" size="25" placeholder="example@xxx.com">
+            </label>
+            <br>
+            <label>
+                website
+                <input type="url" required size="30" placeholder="http://... *Required">
+            </label>
+            <br>
+        <h3>Gender</h3>
+        <label>
+            Male
+            <input type="radio" name="gender" id="Male">
+        </label>
+        <label>
+            Female
+            <input type="radio" name="gender" id="Feale">
+        </label>
+        <label>
+            Other
+            <input type="radio" name="gender" id="other">
+        </label>
+        <label>
+            cat
+            <input type="radio" name="gender" id="cat" checked>
+        </label>
+        <br>
+        <h3>comments</h3>
+        <textarea name="comments" id="comments" cols="80" rows="10" placeholder="Say Something ?"></textarea>
+        <br>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+<h3>Or You can find me on:</h3>
+<section class="section--center mdl-grid site-max-width">
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+      <div class="mdl-card__media">
+          <a href="https://github.com/yurishouse" target="_blank"><img class="article-image" src="../img/github.png" border="0" alt="github"></a>
       </div>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" id="Email" name="_replyto">
-          <label class="mdl-textfield__label" for="Email">Email...</label>
+      <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">My github</h2>
       </div>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <textarea class="mdl-textfield__input" type="text" rows="5" id="note" name="message"></textarea>
-          <label class="mdl-textfield__label" for="note">Enter note</label>
+      <div class="mdl-card__supporting-text">
+          The place where I share all of my projects, codes, and mystery photos with everyone. Basically everything is under a<a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3.0</a> license. so feel free to grub what you need.
       </div>
-      <p>
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-              Submit
-          </button>
-      </p>
-  </form>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+      <div class="mdl-card__media">
+          <a href="https://twitter.com/ShiinaYuriChan"><img class="article-image" src="../img/twitter.png" border="0" alt="twitter"></a>
+      </div>
+      <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Twitter</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+          I mainly use Twitter as my social media platform, come hangout with me! I will be very happy to see you.
+      </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+      <div class="mdl-card__media">
+          <a href="https://t.me/yurishouse"><img class="article-image" src="../img/telegram.png" border="0" alt="telegram"></a>
+      </div>
+      <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Telegram</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+          I use Telegram as my choice of IMS (instant message) app, It's more secure than most of the ims apps out there with a better crypto and useful features that other apps usually charges you money to use. 
+      </div>
+  </div>
+</section>
 </div></div>
               </div>
             </div>
@@ -63,9 +129,10 @@
         </div>
         <footer class="mdl-mini-footer">
           <div class="footer-container">
-            <div class="mdl-logo">&copy; Unitiled. Design: <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+            <div class="mdl-logo">&copy; Yuri's Homepage</div>
             <ul class="mdl-mini-footer__link-list">
-              <li><a href="#">Privacy & Terms</a></li>
+              <li><a href="https://www.gnu.org/licenses/gpl-3.0.html">License & Terms(for content only)</a></li>
+              <li>Design: <a href="https://templateflip.com/material-portfolio" target="_blank">TemplateFlip</a></div></li>
             </ul>
           </div>
         </footer>
